@@ -65,6 +65,7 @@ lines=sorted(lines,key=lambda x: [int(x[3]),int(x[4])])
 reaction_wells=['A1','A2','A3','A4']
 #A3 and A4 are negative control
 
+p1000.pick_up_tip()
 for well in reaction_wells:
     for line in lines:
         source_location=line[0]
